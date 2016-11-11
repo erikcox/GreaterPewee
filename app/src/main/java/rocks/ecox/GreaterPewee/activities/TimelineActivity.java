@@ -51,7 +51,6 @@ public class TimelineActivity extends AppCompatActivity {
             // SUCCESS
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray json) {
-                Log.d("DEBUG", json.toString());
                 // JSON HERE
                 // DESERIALIZE JSON
                 // CREATE MODELS AND ADD THEM TO THE ADAPTER

@@ -24,8 +24,8 @@ import org.scribe.builder.api.TwitterApi;
 public class TwitterClient extends OAuthBaseClient {
 	public static final Class<? extends Api> REST_API_CLASS = TwitterApi.class;
 	public static final String REST_URL = "https://api.twitter.com/1.1";
-	public static final String REST_CONSUMER_KEY = "JxBLiuXrtnoPkVsQ6ZU7KUziS";
-	public static final String REST_CONSUMER_SECRET = "OmMCvbxCYGPMn3pAGLFw47VG2uNRIUICOM9CkMECbr0UDIlMxu";
+	public static final String REST_CONSUMER_KEY = TwitterApplication.getContext().getString(R.string.twitter_key);
+	public static final String REST_CONSUMER_SECRET = TwitterApplication.getContext().getString(R.string.twitter_secret);
 	public static final String REST_CALLBACK_URL = "oauth://greaterpewee";
 
 	public TwitterClient(Context context) {

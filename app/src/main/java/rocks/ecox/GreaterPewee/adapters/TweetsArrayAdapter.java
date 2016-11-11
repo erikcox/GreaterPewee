@@ -38,7 +38,6 @@ public class TweetsArrayAdapter  extends ArrayAdapter<Tweet> {
         TextView tvBody= (TextView) convertView.findViewById(R.id.tvBody);
         // Populate data into the subviews
         ivProfileImage.setImageResource(android.R.color.transparent); // clear out the old image for a recycled view
-//        Log.d("DEBUG", tweet.getUser().toString());
         Picasso.with(getContext()).load(tweet.getUser().getProfileImageUrl()).into(ivProfileImage);
 
         tvUserName.setText(tweet.getUser().getScreenName());
