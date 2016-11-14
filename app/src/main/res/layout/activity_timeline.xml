@@ -5,16 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.codepath.apps.GreaterPewee.activities.TimelineActivity">
+    tools:context="rocks.ecox.GreaterPewee.activities.TimelineActivity">
 
-    <ListView
+    <fragment
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:name="rocks.ecox.GreaterPewee.fragments.TweetsListFragment"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:id="@+id/lvTweets"/>
+        android:id="@+id/fragment"
+        tools:layout="@layout/fragment_tweets_list"/>
 </RelativeLayout>
