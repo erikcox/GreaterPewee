@@ -1,4 +1,4 @@
-package com.codepath.apps.GreaterPewee;
+package rocks.ecox.GreaterPewee;
 
 import android.app.Application;
 import android.content.Context;

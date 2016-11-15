@@ -1,4 +1,4 @@
-package com.codepath.apps.GreaterPewee.adapters;
+package rocks.ecox.GreaterPewee.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,8 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.codepath.apps.GreaterPewee.R;
-import com.codepath.apps.GreaterPewee.models.Tweet;
+import rocks.ecox.GreaterPewee.R;
+import rocks.ecox.GreaterPewee.models.Tweet;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

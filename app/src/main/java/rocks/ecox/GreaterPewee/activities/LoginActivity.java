@@ -1,12 +1,12 @@
-package com.codepath.apps.GreaterPewee.activities;
+package rocks.ecox.GreaterPewee.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 
-import com.codepath.apps.GreaterPewee.R;
-import com.codepath.apps.GreaterPewee.TwitterClient;
+import rocks.ecox.GreaterPewee.R;
+import rocks.ecox.GreaterPewee.TwitterClient;
 import com.codepath.oauth.OAuthLoginActionBarActivity;
 
 // Where the user will sign in to twitter

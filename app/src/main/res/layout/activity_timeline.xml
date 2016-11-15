@@ -10,10 +10,10 @@
     <fragment
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:name="rocks.ecox.GreaterPewee.fragments.TweetsListFragment"
+        android:name="rocks.ecox.GreaterPewee.fragments.MentionsTimelineFragment"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/fragment"
+        android:id="@+id/fragment_timeline"
         tools:layout="@layout/fragment_tweets_list"/>
 </RelativeLayout>

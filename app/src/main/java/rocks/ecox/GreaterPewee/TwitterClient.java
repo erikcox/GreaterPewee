@@ -1,4 +1,4 @@
-package com.codepath.apps.GreaterPewee;
+package rocks.ecox.GreaterPewee;
 
 import android.content.Context;
 
@@ -45,7 +45,16 @@ public class TwitterClient extends OAuthBaseClient {
         getClient().get(apiUrl, params, handler);
     }
 
-    // COMPOSE TWEET
+	public void getMentionsTimeline(AsyncHttpResponseHandler handler) {
+		String apiUrl = getApiUrl("statuses/mentions_timeline.json");
+		// Specify params
+		RequestParams params = new RequestParams();
+		params.put("count", 25);
+		// Execute request
+		getClient().get(apiUrl, params, handler);
+	}
+
+	// COMPOSE TWEET
 
 	/* 1. Define the endpoint URL with getApiUrl and pass a relative path to the endpoint
 	 * 	  i.e getApiUrl("statuses/home_timeline.json");

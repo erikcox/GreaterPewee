@@ -1,4 +1,4 @@
-package com.codepath.apps.GreaterPewee.models;
+package rocks.ecox.GreaterPewee.models;
 
 import org.json.JSONArray;
 import org.json.JSONException;
