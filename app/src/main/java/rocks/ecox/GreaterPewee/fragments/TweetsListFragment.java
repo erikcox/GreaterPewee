@@ -8,12 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import rocks.ecox.GreaterPewee.R;
-import rocks.ecox.GreaterPewee.models.*;
-import rocks.ecox.GreaterPewee.adapters.*;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import rocks.ecox.GreaterPewee.R;
+import rocks.ecox.GreaterPewee.adapters.TweetsArrayAdapter;
+import rocks.ecox.GreaterPewee.models.Tweet;
 
 public class TweetsListFragment extends Fragment {
     private ArrayList<Tweet> tweets;
@@ -32,11 +32,11 @@ public class TweetsListFragment extends Fragment {
         return v;
     }
 
-
     // Creation lifecycle event
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         // Create the ArrayList (data source)
         tweets = new ArrayList<>();
         // Construct the adapter from the data source
